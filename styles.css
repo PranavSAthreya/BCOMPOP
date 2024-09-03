@@ -1,0 +1,147 @@
+/* styles.css */
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Height for html and body */
+html, body {
+    height: 100%;
+}
+
+/* Body Flexbox Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+/* Shared Item Styles for Experience, Education, and Skills */
+.experience-item, .education-item, .skill-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.experience-item:hover, .education-item:hover, .skill-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+.experience-img, .education-img, .skill-img {
+    max-width: 150px; /* Adjust size of the image */
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.intro-image {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Ensure the goal card has a shadow and proper styling */
+.goal-card {
+    background-color: #fff; /* Background color of the card */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+/* Goal content styling */
+.goal-content {
+    text-align: center; /* Center text inside the card */
+}
+
+.goal-content img {
+    width: 100%; /* Make image fill the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Optional: Add a border below the image */
+}
+
+/* Responsive adjustments for goal cards */
+@media (max-width: 767.98px) {
+    .goal-card {
+        margin-bottom: 20px; /* Add margin at the bottom for smaller screens */
+    }
+}
+
+
